@@ -10,7 +10,7 @@ on:
       - unlabeled
 
 jobs:
-  Linear Issue ID Validation:
+  Linear-issue-ID-validation:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
