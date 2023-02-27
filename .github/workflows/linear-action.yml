@@ -15,15 +15,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        
-      - name: Branch Name
-        run: echo "${{ github.head_ref }}"
 
       - name: Extract & Query
         id: extract
         uses: swe-memory/linear-actions@v1.8
         with:
           token: ${{ github.token }}
-          branch_name: ${{ github.head_ref }}
           linear_auth_type: "accessToken"
           linear_auth_key: ${{ secrets.LINEAR_OAUTH }}
