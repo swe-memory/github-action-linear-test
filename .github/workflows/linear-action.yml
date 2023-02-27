@@ -18,7 +18,7 @@ jobs:
 
       - name: Extract & Query
         id: extract
-        uses: swe-memory/linear-actions@v1.8
+        uses: swe-memory/linear-actions@v1.9
         with:
           token: ${{ github.token }}
           linear_auth_type: "accessToken"
