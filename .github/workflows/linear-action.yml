@@ -11,6 +11,7 @@ on:
 
 jobs:
   PR-title-linear-validation:
+    name: PR Title Validation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
